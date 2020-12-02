@@ -149,6 +149,16 @@ paths:
       tags: []
       responses: {}
       operationId: post-login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
 components:
   schemas:
     User:
