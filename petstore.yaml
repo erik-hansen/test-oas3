@@ -111,6 +111,12 @@ paths:
         - petstore_auth:
             - 'write:pets'
             - 'read:pets'
+      x-custom-info:
+        check: true
+        mate:
+          - mate1
+          - mate2
+          - mate3
   /pet/findByStatus:
     get:
       tags:
@@ -801,3 +807,7 @@ components:
       in: header
 security:
   - api_key: []
+x-validator:
+  hip1: true
+  hip2: true
+  hooray: false
