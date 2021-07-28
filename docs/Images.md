@@ -5,3 +5,4 @@ The beginning of an awesome article...
 
 
 ![API Gear](images/API-logo.PNG)
+![API Gear](docs/images/API-logo.PNG)
