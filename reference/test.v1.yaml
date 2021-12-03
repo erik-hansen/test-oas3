@@ -15,7 +15,9 @@ paths:
         description: Id of an existing user.
     get:
       summary: Get User Info by User ID
-      tags: []
+      tags:
+        - v1_alpha
+        - Users
       responses:
         '200':
           description: User Found
@@ -143,10 +145,15 @@ paths:
                   dateOfBirth: '1996-08-24'
         description: Post the necessary fields for the API to create a new user.
       description: Create a new user.
+      tags:
+        - v1_alpha
+        - Users
   /login:
     post:
       summary: Login
-      tags: []
+      tags:
+        - v1_alpha
+        - Authentication
       responses: {}
       operationId: post-login
       requestBody:
@@ -203,7 +210,7 @@ components:
         - email
         - emailVerified
     com.example.Shape:
-      title: com.example.Shape
+      title: com.example.test.v1.component.Shape
       type: object
       description: ''
       properties:
