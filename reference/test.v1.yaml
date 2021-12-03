@@ -16,8 +16,8 @@ paths:
     get:
       summary: Get User Info by User ID
       tags:
-        - v1_alpha
         - Users
+        - v1_alpha
       responses:
         '200':
           description: User Found
@@ -91,6 +91,10 @@ paths:
                   lastName: Baker
                   dateOfBirth: '1985-10-02'
         description: Patch user properties to update.
+      tags:
+        - Users
+        - v1_alpha
+        
   /user:
     post:
       summary: Create New User
@@ -146,14 +150,14 @@ paths:
         description: Post the necessary fields for the API to create a new user.
       description: Create a new user.
       tags:
-        - v1_alpha
         - Users
+        - v1_alpha
   /login:
     post:
       summary: Login
       tags:
-        - v1_alpha
         - Authentication
+        - v1_alpha
       responses: {}
       operationId: post-login
       requestBody:
