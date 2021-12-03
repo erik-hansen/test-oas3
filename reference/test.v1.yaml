@@ -202,6 +202,21 @@ components:
         - lastName
         - email
         - emailVerified
+    com.example.Shape:
+      title: com.example.Shape
+      type: object
+      description: ''
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+    com.example.Sound:
+      title: com.example.Sound
+      type: object
+      properties:
+        id:
+          type: string
   securitySchemes:
     BasicAuth:
       type: http
